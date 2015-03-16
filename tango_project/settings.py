@@ -52,6 +52,11 @@ ROOT_URLCONF = 'tango_project.urls'
 
 WSGI_APPLICATION = 'tango_project.wsgi.application'
 
+TEMPLATE_DIRS = [
+    os.path.join(BASE_DIR, 'templates'),
+    os.path.join(BASE_DIR, 'templates', 'rango'),
+]
+
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
